@@ -1,13 +1,26 @@
-title, header (Weather Dashboard)
-meta viewport tag, english= language...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type ="text/css" href="c.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+</head>
+<body id="body">
 
-search box, search area
+<!-- I want one container for a search box for searching city names.-->
 
-something to display the data from the AJAX call (a div)
+<!-- something to display the data from the AJAX call (a div)-->
+<div class="forecast"> </div>
+<div class="today"> </div>
+<div class="uv"> </div>
 
-jquery!!!!!
-main JS file
+<button class="search-button">Click here!</button>
+<form>
+    <input id="search-value" name="searchValue"/>
+</form>
 
-
-closing body tag
-closing HTML tag
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="j.js"></script> 
+</body>
