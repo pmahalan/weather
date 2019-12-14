@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
 </head>
-<body id="body">
+<body id="body" style="background-color: grey;">
 
 <!-- Deliberatley blank row-->
 <div class="row">
@@ -15,7 +15,8 @@
 </div>
 
 <!-- First row of content: Margin space, Header, search box -->
-<div class="row">
+<span class="border border-primary">
+<div class="row" style="border: darkblue;">
     <div class="col-sm-2"></div>
     <div class="temperature" class="col-sm-6"> 
             <button class="search-button">Click here!</button>
@@ -25,22 +26,27 @@
         <form> <input id="search-value" name="searchValue"/> </form> 
     </div>
 </div>
+</span>
 
 <!-- Second row:  -->
-<div class="row" style="margin: 50px;">
+<span class="border border-primary">
+<div class="row" style="margin: 50px; border: darkblue;">
         <div class="marginspace" class="col-sm-6"> </div>
         <!-- Deliberatley blank space-->
 
         <div class="windspeed" class="col-sm-6"> </div>
 </div>
+</span>
 
 <!-- Third row:  -->
-<div class="row" style="margin: 50px;">
+<span class="border border-primary">
+<div class="row" style="margin: 50px; border: darkblue;">
             <div class="marginspace" class="col-sm-6"> </div>
             <!-- Deliberatley blank space-->
             
             <div class="humidity" class="col-sm-6"> </div>
 </div>
+</span>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
