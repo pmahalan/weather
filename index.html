@@ -9,19 +9,39 @@
 </head>
 <body id="body">
 
+<!-- Deliberatley blank row-->
+<div class="row">
+    <div class="marginspace" class="col-sm-12"> <p>   </p> </div>
+</div>
 
-<div class="windspeed"> </div>
+<!-- First row of content: Margin space, Header, search box -->
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="temperature" class="col-sm-6"> 
+            <button class="search-button">Click here!</button>
+    </div>
 
-<div class="today"> </div>
+    <div class="col-sm-4">
+        <form> <input id="search-value" name="searchValue"/> </form> 
+    </div>
+</div>
 
-<div class="uv"> </div>
+<!-- Second row:  -->
+<div class="row" style="margin: 50px;">
+        <div class="marginspace" class="col-sm-6"> </div>
+        <!-- Deliberatley blank space-->
 
+        <div class="windspeed" class="col-sm-6"> </div>
+</div>
 
+<!-- Third row:  -->
+<div class="row" style="margin: 50px;">
+            <div class="marginspace" class="col-sm-6"> </div>
+            <!-- Deliberatley blank space-->
+            
+            <div class="humidity" class="col-sm-6"> </div>
+</div>
 
-<button class="search-button">Click here!</button>
-<form>
-    <input id="search-value" name="searchValue"/>
-</form>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="j.js"></script> 
