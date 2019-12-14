@@ -14,7 +14,10 @@ $(document).ready(function() {
             type: "GET"
         }).then(function (response) {
             console.log(response)
-            $(".temperature").html("<h1>" + response.name + " Current Weather Details</h1>" + "Temperature: " + response.main.temp);
+
+            var Farenheit = (response.main.temp - 273.15) * 1.80 +32;
+
+            $(".temperature").html("<h1>" + response.name + " Current Weather Details</h1>" + "Temperature (F): " + Farenheit.toFixed(2));
 
             $(".windspeed").html("<p> Wind speed: </p>" + response.wind.speed);
 
@@ -27,7 +30,7 @@ $(document).ready(function() {
 
     var darkkey = "9f68d2be222dbb1a918e1f5457bf6724/"
     var lat = 
-    var lon = 
+    //var lon = 
 
     function getUV(lat,lon) {
 
